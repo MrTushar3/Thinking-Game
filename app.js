@@ -26,7 +26,7 @@ next.addEventListener('click', () => {
             current = 5;
             break;
         case 5:
-            text.innerHTML = "YOU NUMBER IS 10";
+            text.innerHTML = "YOUR NUMBER IS 10";
             next.innerHTML="RESTART GAME"
                 current=0;
             break;
