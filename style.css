@@ -1,18 +1,23 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #ffd0001e;
+    background: url("motion1.gif") no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+
+}
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #ffd0001e;
 }
-
 .item {
     text-align: center;
     background-color: #28282B;
-    width: 400px;
+    width: 450px;
     height: 180px;
     padding: 10px;
     border-radius: 10px;
@@ -28,4 +33,8 @@ button{
     cursor: pointer;
     background:#ffd000;
     color: #28282B;
+}
+h1{
+    text-align: center;
+    
 }
