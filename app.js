@@ -5,9 +5,13 @@ next.addEventListener('click', () => {
     switch (current) {
         case 0:
             text.innerHTML = "THINK A NUMBER";
-            next.innerHTML="NEXT";
+            document.body.style.background = "url('motion1.gif') no-repeat";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backdropFilter = "blur(10px)";
+            next.innerHTML = "NEXT";
             current = 1;
             break;
+
         case 1:
             text.innerHTML = "DOUBLE IT";
             current = 2;
@@ -22,13 +26,16 @@ next.addEventListener('click', () => {
             break;
         case 4:
             text.innerHTML = "REMOVE NUMBER YOU THINK";
-            text.style.fontSize="27.11px";
+            text.style.fontSize = "27.11px";
             current = 5;
             break;
         case 5:
-            text.innerHTML = "YOUR NUMBER IS 10";
-            next.innerHTML="RESTART GAME"
-                current=0;
+            text.innerHTML = "YOU NUMBER IS 10";
+            document.body.style.background = "url('last.gif') no-repeat";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backdropFilter = "blur(10px)";
+            next.innerHTML = "RESTART GAME"
+            current = 0;
             break;
     }
 })
